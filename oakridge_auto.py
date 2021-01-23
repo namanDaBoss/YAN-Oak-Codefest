@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'oakridge.ui'
+# Form implementation generated from reading ui file 'modulus.ui'
 #
-# Created: Sat Jan 23 17:05:43 2021
+# Created: Sat Jan 23 21:40:27 2021
 #      by: PyQt4 UI code generator 4.11.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -26,7 +26,7 @@ except AttributeError:
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
-        MainWindow.resize(851, 583)
+        MainWindow.resize(851, 634)
         MainWindow.setStyleSheet(_fromUtf8("color:rgb(0, 0, 0);\n"
 "background-color: rgb(0, 255, 127);\n"
 ""))
@@ -158,6 +158,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
+        QtCore.QObject.connect(self.buttonclose, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):

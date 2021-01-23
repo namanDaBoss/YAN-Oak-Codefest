@@ -6,22 +6,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1440</width>
-    <height>900</height>
+    <width>851</width>
+    <height>634</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">color: rgb(255, 0, 0)</string>
+   <string notr="true">color:rgb(0, 0, 0);
+background-color: rgb(0, 255, 127);
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>80</y>
+      <x>20</x>
+      <y>130</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -33,35 +35,39 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>0</y>
-      <width>181</width>
+      <x>310</x>
+      <y>20</y>
+      <width>231</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">color:rgb(12, 28, 211);
-font: 24pt &quot;Chalkduster&quot;;</string>
+font: 87 18pt &quot;Rockwell Extra Bold&quot;;
+</string>
     </property>
     <property name="text">
-     <string>Hospital data</string>
+     <string>Hospital Data</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineid">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>80</y>
-      <width>411</width>
+      <x>120</x>
+      <y>130</y>
+      <width>311</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>110</y>
+      <x>20</x>
+      <y>160</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -73,8 +79,8 @@ font: 24pt &quot;Chalkduster&quot;;</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>140</y>
+      <x>20</x>
+      <y>190</y>
       <width>31</width>
       <height>16</height>
      </rect>
@@ -86,8 +92,8 @@ font: 24pt &quot;Chalkduster&quot;;</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>260</y>
+      <x>20</x>
+      <y>310</y>
       <width>91</width>
       <height>16</height>
      </rect>
@@ -99,58 +105,73 @@ font: 24pt &quot;Chalkduster&quot;;</string>
    <widget class="QLineEdit" name="linename">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>110</y>
-      <width>411</width>
+      <x>120</x>
+      <y>160</y>
+      <width>311</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="linedob">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>140</y>
-      <width>411</width>
+      <x>120</x>
+      <y>190</y>
+      <width>311</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineillness">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>260</y>
-      <width>411</width>
+      <x>120</x>
+      <y>310</y>
+      <width>311</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QListWidget" name="lw">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>80</y>
+      <x>460</x>
+      <y>130</y>
       <width>361</width>
       <height>341</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
    </widget>
-   <widget class="QTextEdit" name="textcourse">
+   <widget class="QTextEdit" name="textpres">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>290</y>
-      <width>411</width>
+      <x>120</x>
+      <y>340</y>
+      <width>311</width>
       <height>131</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>290</y>
+      <x>20</x>
+      <y>340</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -162,8 +183,8 @@ font: 24pt &quot;Chalkduster&quot;;</string>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>230</y>
+      <x>20</x>
+      <y>280</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -175,24 +196,28 @@ font: 24pt &quot;Chalkduster&quot;;</string>
    <widget class="QLineEdit" name="linedov">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>230</y>
-      <width>411</width>
+      <x>120</x>
+      <y>280</y>
+      <width>311</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>50</y>
+      <x>130</x>
+      <y>100</y>
       <width>60</width>
       <height>16</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(0, 231, 233)</string>
+     <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(170, 0, 127);</string>
     </property>
     <property name="text">
      <string>Enter ID</string>
@@ -201,24 +226,30 @@ font: 24pt &quot;Chalkduster&quot;;</string>
    <widget class="QLineEdit" name="linesearch">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>50</y>
+      <x>200</x>
+      <y>100</y>
       <width>151</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QPushButton" name="buttonadd">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>440</y>
+      <x>40</x>
+      <y>490</y>
       <width>113</width>
       <height>32</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(237, 0, 219)</string>
+     <string notr="true">
+font: 87 10pt &quot;Segoe UI Black&quot;;
+color: rgb(255, 0, 0);
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ADD</string>
@@ -227,14 +258,17 @@ font: 24pt &quot;Chalkduster&quot;;</string>
    <widget class="QPushButton" name="buttonselect">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>440</y>
+      <x>370</x>
+      <y>490</y>
       <width>113</width>
       <height>32</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(237, 0, 219)</string>
+     <string notr="true">
+font: 87 10pt &quot;Segoe UI Black&quot;;
+color: rgb(255, 0, 0);
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>SELECT</string>
@@ -243,14 +277,17 @@ font: 24pt &quot;Chalkduster&quot;;</string>
    <widget class="QPushButton" name="buttonsave">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>440</y>
+      <x>200</x>
+      <y>490</y>
       <width>113</width>
       <height>32</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(237, 0, 219)</string>
+     <string notr="true">
+font: 87 10pt &quot;Segoe UI Black&quot;;
+color: rgb(255, 0, 0);
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>SAVE</string>
@@ -259,14 +296,17 @@ font: 24pt &quot;Chalkduster&quot;;</string>
    <widget class="QPushButton" name="buttondelete">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>440</y>
+      <x>540</x>
+      <y>490</y>
       <width>113</width>
       <height>32</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(237, 0, 219)</string>
+     <string notr="true">
+font: 87 10pt &quot;Segoe UI Black&quot;;
+color: rgb(255, 0, 0);
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>DELETE</string>
@@ -275,14 +315,17 @@ font: 24pt &quot;Chalkduster&quot;;</string>
    <widget class="QPushButton" name="buttonclose">
     <property name="geometry">
      <rect>
-      <x>880</x>
-      <y>440</y>
+      <x>710</x>
+      <y>490</y>
       <width>113</width>
       <height>32</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(237, 0, 219)</string>
+     <string notr="true">
+font: 87 10pt &quot;Segoe UI Black&quot;;
+color: rgb(255, 0, 0);
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>CLOSE</string>
@@ -291,8 +334,8 @@ font: 24pt &quot;Chalkduster&quot;;</string>
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>170</y>
+      <x>20</x>
+      <y>220</y>
       <width>41</width>
       <height>16</height>
      </rect>
@@ -304,8 +347,8 @@ font: 24pt &quot;Chalkduster&quot;;</string>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>200</y>
+      <x>20</x>
+      <y>250</y>
       <width>60</width>
       <height>16</height>
      </rect>
@@ -317,34 +360,42 @@ font: 24pt &quot;Chalkduster&quot;;</string>
    <widget class="QLineEdit" name="lineemail">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>170</y>
-      <width>411</width>
+      <x>120</x>
+      <y>220</y>
+      <width>311</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="linephone">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>200</y>
-      <width>411</width>
+      <x>120</x>
+      <y>250</y>
+      <width>311</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QPushButton" name="buttonsearch">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>20</y>
-      <width>113</width>
-      <height>32</height>
+      <x>220</x>
+      <y>70</y>
+      <width>101</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(0, 231, 233)</string>
+     <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(170, 0, 127);
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>SEARCH</string>
@@ -356,13 +407,30 @@ font: 24pt &quot;Chalkduster&quot;;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1440</width>
-     <height>22</height>
+     <width>851</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>buttonclose</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>746</x>
+     <y>533</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>646</x>
+     <y>588</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
