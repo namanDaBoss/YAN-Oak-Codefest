@@ -13,10 +13,35 @@ class MyWindowClass(QtGui.QMainWindow, Ui_MainWindow):
         self.buttonselect.clicked.connect(self.select)
         self.buttonadd.clicked.connect(self.add)
         self.buttonsave.clicked.connect(self.save)
+        self.buttonsearch.clicked.connect(self.search)
         self.retrieve()
         self.sele="beginning"
         self.mode="notadd"
         self.select()
+
+    def search(self):
+        x=self.linesearch.text()
+        try:
+            self.cursor=self.conn.execute("select Name,DOB,Email,Phone,Visit,Illness,Prescription from hospital where id="+str(x))
+            row=self.cursor.fetchall()
+            nem=row[0][0]
+            dobi=row[0][1]
+            illi=row[0][2]
+            dove=row[0][3]
+            pres=row[0][4]
+            zac=row[0][5]
+            zen=row[0][6]
+            self.linename.setText(nem)
+            self.linedob.setText(dobi)
+            self.lineemail.setText(illi)
+            self.linephone.setText(str(dove))
+            self.linedov.setText(pres)
+            self.lineillness.setText(zac)
+            self.textpres.setText(zen)
+            self.lineid.setText(x)
+        except sqlite3.Error as e:
+            w = QtGui.QWidget()
+            QtGui.QMessageBox.information(w,"An error occurred:",e.args[0]) 
 
     def save(self):
         ido=self.lineid.text()
