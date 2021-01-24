@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'modulus.ui'
 #
-# Created: Sat Jan 23 21:40:27 2021
+# Created: Sun Jan 24 07:57:58 2021
 #      by: PyQt4 UI code generator 4.11.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -42,6 +42,7 @@ class Ui_MainWindow(object):
 ""))
         self.label_2.setObjectName(_fromUtf8("label_2"))
         self.lineid = QtGui.QLineEdit(self.centralwidget)
+        self.lineid.setEnabled(False)
         self.lineid.setGeometry(QtCore.QRect(120, 130, 311, 21))
         self.lineid.setStyleSheet(_fromUtf8("background-color: rgb(255, 255, 255);"))
         self.lineid.setObjectName(_fromUtf8("lineid"))
@@ -90,6 +91,7 @@ class Ui_MainWindow(object):
 "color: rgb(170, 0, 127);"))
         self.label_8.setObjectName(_fromUtf8("label_8"))
         self.linesearch = QtGui.QLineEdit(self.centralwidget)
+        self.linesearch.setEnabled(True)
         self.linesearch.setGeometry(QtCore.QRect(200, 100, 151, 21))
         self.linesearch.setStyleSheet(_fromUtf8("background-color: rgb(255, 255, 255);"))
         self.linesearch.setObjectName(_fromUtf8("linesearch"))

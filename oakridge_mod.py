@@ -14,11 +14,21 @@ class MyWindowClass(QtGui.QMainWindow, Ui_MainWindow):
         self.buttonadd.clicked.connect(self.add)
         self.buttonsave.clicked.connect(self.save)
         self.buttonsearch.clicked.connect(self.search)
+        self.buttondelete.clicked.connect(self.delete)
         self.retrieve()
         self.sele="beginning"
         self.mode="notadd"
         self.select()
+        
+    def delete(self):
+        ido=self.lineid.text()
+        mysql="delete from hospital where id="+str(ido)
+        self.cursor=self.conn.execute(mysql)
+        self.conn.commit()
+        self.retrieve()
+        
 
+        
     def search(self):
         x=self.linesearch.text()
         try:
